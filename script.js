@@ -30,6 +30,10 @@ function changeColour() {
   document.body.style.background = colourArray[currentColour];
 }
 
+function pushColour() {
+    let newColour = document.getElementById('new-colour').value
+    colourArray.push(newColour)
+}
 
 
 // getElementById
