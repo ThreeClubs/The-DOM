@@ -6,7 +6,9 @@
 
 body {
     background: #FFFFFF;
-    min-width: 960px;
+    max-width: 960px;
+    min-width: 300px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -15,34 +17,37 @@ h1 {
 
 header {
     text-align: center;
-    min-width: 300px;
     margin: 50px;
     padding: 20px;
     background-color: aliceblue;
-    width: 50%;
+    width: 80%;
     margin: 20px auto;
+    border: none;
+    box-shadow: 0px 0px 5px #394b53;
+    
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+ main {
+  margin: 0 auto;
+  display:grid;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center;
 }
 
 div {
-    margin: 20px;
-    padding: 10px;
-    height: 250px;
-    width: 750px;
-    border:rgb(63, 39, 39) 1px solid;
+    padding: 25px;
+    border:none;
+    border-radius: 10%;
+    box-shadow: 0px 0px 5px #394b53;
     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: aliceblue;
-   
 }
 
 input, button {
@@ -54,5 +59,19 @@ input, button {
      box-shadow: 0px 0px 3px #5d65a7;
 }
 
+#charCountBox {
+    height: 150px;
+    width: 420px;
+    border-radius: 25px;
+}
 
+label {
+    font-weight: 600;
+}
+
+#addTwoBox {
+    width: 420px;
+    border-radius: 15px;
+    padding: 25px;
+}
 

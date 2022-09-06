@@ -107,3 +107,59 @@ testDiv.addEventListener("mouseover", function () {
 
 // TARGET 
 
+function alarmingPink(event) {
+  event.target.style.background = "pink";
+  // alert("what changed?");
+}
+
+function aliceBlue(event) {
+  event.target.style.background = "aliceblue";
+  // alert("what changed?");
+}
+
+testDiv.addEventListener("mouseover", alarmingPink);
+counterEl.addEventListener("mouseover", alarmingPink);
+testDiv.addEventListener("mouseout", aliceBlue);
+counterEl.addEventListener("mouseout", aliceBlue);
+
+// const inputElement = document.querySelector('#myInput');
+// inputElement.addEventListener('input', logValue);
+
+// function logValue(event) {
+//   console.log(event.target.value);
+// }
+const inputElement = document.getElementById('myInput');
+const charCounterEl = document.getElementById('charCounter')
+
+function displayCharCount(event) {
+  charCounterEl.textContent = event.target.value.length
+}
+
+inputElement.addEventListener('input', displayCharCount)
+
+const addButton = document.getElementById('addButton')
+const numOne = document.getElementById('firstNum')
+const numTwo = document.getElementById('secondNum')
+let result = document.getElementById('result')
+addButton.addEventListener("click", function() {
+  let sum = parseInt(numOne.value) + Number(numTwo.value); //parseInt or Number works
+  result.textContent = `${numOne.value} + ${numTwo.value} = ${sum}`;
+});
+ 
+// Reuben's result
+
+console.log(
+  "Nan" + +"a" + +"a" + +"a" + +"a" + +"a" + +"a" + +"a" + "a Batmaaaaaaan"
+);
+
+
+
+
+
+
+
+
+
+
+
+
